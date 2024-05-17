@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}{% endblock %} </title> <!-- Название страницы -->
+</head>
+<body >
+      <a href="/" >
+       <span > books</span>    <!-- встроенный контейнер, используемый дляразметки части текста или части документа -->
+      </a>
+      <nav >   <!-- элемент навигации -->
+            <a  href="/" >Главная</a>
+            <a  href="/Inform">Информация</a>
+            <a  href="/create-books">Загрузка книги</a>
+            <a  href="/POSTS">Загруженные книги</a>
+      </nav>
+    {% block body %}{% endblock %}                  <!-- Текст на странице-->
+
+</body>
+
+</html>

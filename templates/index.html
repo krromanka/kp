@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Гл страница
+{% endblock %}
+
+{% block body %}
+  <h1>Основная страница</h1>
+{% for el in boks  %}
+    <h2> <b>{{el.title}} </b></h2>
+    <p >  Жанры: {{el.genr}}</p>
+    <p >  Автор: {{el.auftor}}</p>
+    <p > Год: {{el.yers}}</p>
+    <a href="/POSTS" > Детальнее</a>
+  {% endfor %}
+{% endblock %}
